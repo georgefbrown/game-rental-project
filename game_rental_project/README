@@ -1,0 +1,45 @@
+Hi Firat, hope you are doing well. Just want to briefly explain each python module to you:
+
+DATABASE.PY - I have used this module for making the database and accessing it
+
+I have included three data cleaning techniques:
+- formatting the dates
+- handing missing purchase price values
+- normalising the data by stripping "'" and making everything lowercase
+
+I have made an execute method which all the other modules use for querying the database
+
+
+GAMESEARCH.PY - This module searches the database
+
+I have included functionality so that you can search for games without having to add the underscores and "'"
+If you press the search button with no data, you can view all the games 
+
+GAMERENT.PY - 
+
+IMPORTANT NOTE: on my laptop, when i wanted to use the subscription manager and load the subscriptions, i had to use my own path for this to work.
+
+When you test my code, please change the following code to your own path:
+
+subscriptions = subscriptionManager.load_subscriptions("/Users/georgebrown/Documents/MASTERS/programming_project/Subscription_Info.txt") # My path
+
+This module allows the user to rent a game by entering a customer id and game id and takes into account the subscription type.
+This updates the database using the current date
+
+GAMERETURN.PY - 
+
+This module returns a game if it has been rented and then updates the database using the current date
+
+GAMESELECT.PY -
+
+This module included: 
+- a function for showing the most popular games. This displays it as both a both a pandas object and matplot lib 
+- a function for showing most popular genres. This displays it as both a pandas object and matplot lib 
+- a function for suggesting games for purchase. This takes into account the most popular games and distributes the budget depending on how popular each game is
+- I have added a feature which allows the user to add purchase games to the database with multiple copies of the same game. This gives each copy a unique ID
+
+
+MAIN.IPYNB - 
+
+This module shpws all the graphical user interface 
+

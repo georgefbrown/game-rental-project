@@ -1,0 +1,6 @@
+CustomerID,SubscriptionType,StartDate,EndDate
+1234,Basic,2023-10-01,2023-11-20
+4321,Premium,2023-10-01,2023-11-20
+4444,Basic,2022-10-01,2022-11-20
+5555,Premium,2023-10-01,2023-11-20
+3333,Basic,2023-10-01,2023-11-20
